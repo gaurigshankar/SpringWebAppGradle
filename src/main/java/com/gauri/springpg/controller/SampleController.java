@@ -10,6 +10,7 @@ public class SampleController {
 	@RequestMapping("home")
 	public String loadHomePage(Model m) {
         m.addAttribute("name", "Gauri");
+        System.out.println("***************************Hello from Controller **************");
         return "home";
     }
 }
